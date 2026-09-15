@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "vazir";
+    src: url(fonts/Vazir.eot);
+    src: url(fonts/Vazir.woff2) format("woff2"),
+        url(fonts/Vazir.ttf) format("truetype"),
+        url(fonts/Vazir.woff) format("woff");
+}
+
+
+
+
+body {
+    font-family: "vazir" !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.hover-grow {
+    transition: all 0.5s;
+}
+
+.hover-grow:hover {
+    transform: scale(1.1);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p {
+    line-height: 1.8 !important;
+}
+
+
+.header {
+    background-color: #fff;
+    box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+}
+
+.header-2 {
+    transition: all 0.5s;
+    padding: 20px;
+
+}
+
+
+
+@media(max-width:992px) {
+    .header-2 {
+        background-color: #fff;
+    }
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url(image/3.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+
+.content {
+    background-color: #f6f9ff;
+    padding: 40px;
+}
+
+/* counts */
+.counts i {
+    font-size: 42px;
+}
+
+.counts i .blue {
+    color: #4154f1;
+}
+
+/* services */
+.services .service-box {
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+
+.services .service-box i {
+    font-size: 36px;
+
+}
+
+.services .service-box .read-more i {
+    font-size: 18px;
+    line-height: 0;
+    margin-right: .4rem;
+}
+
+.services .service-box .read-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+
+}
+
+.services .blue {
+    border-bottom: 3px solid rgb(77, 141, 244);
+}
+
+.services .orange {
+    border-bottom: 3px solid rgb(244, 166, 77);
+}
+
+.services .purple {
+    border-bottom: 3px solid rgb(246, 91, 179);
+}
+
+
+.services .blue .blue2 {
+    background-color: rgb(193, 198, 246);
+    color: #4154f1;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.services .orange .blue2 {
+    background-color: rgb(246, 227, 193);
+    color: #f1a241;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.services .purple .blue2 {
+    background-color: rgb(246, 193, 243);
+    color: #f859dd;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* blue style */
+.services .blue:hover {
+    background-color: #4154f1;
+    color: white;
+}
+
+.services .blue:hover i {
+    color: #4154f1;
+    background-color: white;
+}
+
+.services .blue:hover a {
+    color: white;
+}
+
+.services .blue:hover .read-more i {
+    color: white;
+}
+
+/* orange style */
+
+.services .orange:hover {
+    background-color: #f37d4f;
+    color: white;
+}
+
+.services .orange:hover i {
+    color: #f18741;
+    background-color: white;
+}
+
+.services .orange:hover a {
+    color: white;
+}
+
+.services .orange:hover .read-more i {
+    color: white;
+}
+
+/* purple style */
+.services .purple:hover {
+    background-color: #f960d8;
+    color: white;
+}
+
+.services .purple:hover i {
+    color: #f141c2;
+    background-color: white;
+}
+
+.services .purple:hover a {
+    color: white;
+}
+
+.services .purple:hover .read-more i {
+    color: white;
+}
+
+
+/* pricing */
+.pricing .card {
+    transition: all 0.3s;
+}
+
+.pricing .card:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* contact */
+.contacts .info-box {
+    background-color: rgb(246, 248, 255);
+    padding: 30px;
+
+}
+
+.contacts .info-box i {
+    font-size: 30px;
+    line-height: 0;
+    color: rgb(45, 152, 246);
+}
+
+.contacts .info-box .cellphone {
+    direction: ltr;
+    text-align: right;
+}
+
+.contacts .form {
+    background-color: #f6f9ff;
+    height: 100%;
+    padding: 30px;
+}
+
+
+/* footer */
+.footer .social-link i {
+    font-size: 20px;
+    color: #4154f1;
+}
+
+.footer hr {
+    width: 70%;
+    height: 5px;
+}
+
+.footer .footer-link i {
+    font-size: 13px;
+}
+
+.footer .footer-link a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.footer .footer-links i {
+    font-size: 13px;
+}
+
+.footer .footer-links a {
+    color: black;
+    text-decoration: none;
+}
