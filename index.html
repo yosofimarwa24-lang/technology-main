@@ -4,41 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>marwa.first</title>
-  <!-- استفاده از یک نسخه استاندارد و راست‌چین بوت‌استرپ ۵ -->
+  <!-- استفاده از نسخه پایدار و راست‌چین بوت‌استرپ ۵ -->
   <link rel="stylesheet" href="https://jsdelivr.net">
   <link rel="stylesheet" href="https://jsdelivr.net">
   <link rel="stylesheet" href="https://unpkg.com" />
   <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
   <link rel="stylesheet" href="first project.css">
   <link href="https://googleapis.com" rel="stylesheet">
-  <!-- فعال‌سازی اسکریپت‌ها با مدیریت صحیح لود شدن -->
+  <!-- فعال‌سازی اسکریپت‌ها -->
   <script defer src="https://jsdelivr.net"></script>
   <script defer src="https://jsdelivr.net"></script>
+  
+  <style>
+    /* ایجاد فضای خالی زیر هدر ثابت تا بخش اول زیر آن مخفی نشود */
+    body {
+      padding-top: 85px; 
+    }
+    /* پس‌زمینه تمیز و شیک برای منوی موبایل هنگام باز شدن */
+    .navbar-collapse {
+      background-color: rgba(255, 255, 255, 0.98); 
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    @media (min-width: 992px) {
+      .navbar-collapse {
+        background-color: transparent; /* حذف پس‌زمینه منو در دسکتاپ */
+        box-shadow: none;
+        padding: 0;
+        margin-top: 0;
+      }
+    }
+    /* کوتاه‌تر شدن تصاویر کارت‌ها برای از بین رفتن حالت دراز */
+    .card-img-ratio {
+      width: 100%;
+      height: 220px; 
+      object-fit: cover;
+    }
+    /* جمع‌وجور و متناسب شدن تصاویر بزرگ بخش‌های معرفی */
+    .section-img {
+      max-width: 100%;
+      height: 360px; 
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      .section-img {
+        height: 260px; /* کوتاه‌تر شدن عکس‌های بزرگ در موبایل */
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- هدر و منوی ناوبری -->
-  <header x-data="{navshow:false}" @scroll.window="navshow=window.scrollY>100 ? true:false">
-    <nav class="header-2 navbar navbar-expand-lg navbar-light fixed-top" :class="{ 'header' :navshow}">
+  <!-- هدر و منوی ناوبری (نوتر) -->
+  <header x-data="{navshow:false}" @scroll.window="navshow=window.scrollY>50 ? true:false">
+    <nav class="header-2 navbar navbar-expand-lg navbar-light fixed-top py-2" :class="{ 'header' :navshow}" style="background-color: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#"> 
-          <img src="image/Smart_Mobile_App_Solutions_by_Code_Brew_Labs_Dubai-removebg-preview.png" alt="Logo" style="width: 50px; height: 50px;" class="rounded-circle">
-          <span>خدمات موبایل</span>
+        <a class="navbar-brand d-flex align-items-center gap-2 m-0" href="#"> 
+          <img src="image/Smart_Mobile_App_Solutions_by_Code_Brew_Labs_Dubai-removebg-preview.png" alt="Logo" style="width: 45px; height: 45px;" class="rounded-circle">
+          <span class="fw-bold fs-5 text-dark">خدمات موبایل</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start gap-2">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+              <a class="nav-link active fw-semibold" aria-current="page" href="#">صفحه اصلی</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#first" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle fw-semibold" href="#first" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 محصولات ما
               </a>
-              <ul class="dropdown-menu text-center text-lg-start">
+              <ul class="dropdown-menu text-center text-lg-start shadow-sm border-0">
                 <li><a class="dropdown-item" href="#first">انواع لپ‌تاپ‌ها</a></li>
                 <li><a class="dropdown-item" href="#first">انواع موبایل</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -46,10 +86,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#fifth">درباره ما</a>
+              <a class="nav-link fw-semibold" href="#fifth">درباره ما</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#six">تماس با ما</a>
+              <a class="nav-link fw-semibold" href="#six">تماس با ما</a>
             </li>
           </ul>
         </div>
@@ -58,20 +98,20 @@
   </header>
 
   <!-- بخش معرفی اول (Intro) -->
-  <section class="intro align-items-center d-flex overflow-hidden py-5 mt-5">
+  <section class="intro align-items-center d-flex overflow-hidden py-5">
     <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-6 text-center text-lg-start">
-          <h3 data-aos="fade-up" class="fw-bold text-primary" data-aos-delay="200">
+      <div class="row align-items-center g-4 text-center text-lg-start">
+        <div class="col-lg-6">
+          <h3 data-aos="fade-up" class="fw-bold text-primary lh-base" data-aos-delay="200">
             بهترین محصولات موبایل و تبلت را با ما تجربه کنید
           </h3>
-          <h5 class="mt-4 text-light lh-lg" data-aos="fade-up" data-aos-delay="300"> 
+          <h5 class="mt-4 text-light lh-lg fw-normal small" data-aos="fade-up" data-aos-delay="300"> 
             جهان تکنولوژی به عنوان یکی از مهمترین و کلیدی ترین عوامل تحول در جوامع مدرن و آینده شناخته می شود. اما، نیاز به استفاده متعادل و هوشمندانه از تکنولوژی برای جلوگیری از نقاط ضعف و احتمالی های منفی آن نیز وجود دارد.
           </h5>
           <button class="btn btn-lg btn-primary mt-3 hover-grow" data-aos="fade-up" data-aos-delay="400">نمایش</button>
         </div>
         <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="300">
-          <img src="./image/Smartphone Interactive Display.jpg" alt="Intro Image" class="img-fluid rounded shadow" style="max-height: 400px; width: 100%; object-fit: cover;">
+          <img src="./image/Smartphone Interactive Display.jpg" alt="Intro Image" class="img-fluid rounded shadow section-img">
         </div>
       </div>
     </div>
@@ -80,8 +120,8 @@
   <!-- بخش دوم (معرفی آیفون) -->
   <section class="py-5 overflow-hidden bg-light">
     <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6 order-lg-2 text-center text-lg-start" data-aos="zoom-out" data-aos-delay="300">
+      <div class="row align-items-center g-5 text-center text-lg-start">
+        <div class="col-lg-6 order-lg-2" data-aos="zoom-out" data-aos-delay="300">
           <div class="content">
             <h3 class="text-primary">بهترین محصولات آیفون را با ما تجربه کنید</h3>
             <h2 class="fw-bold my-3">انتخاب بهتر، تجربه به یادماندنی</h2>
@@ -90,7 +130,7 @@
           </div>
         </div>
         <div class="col-lg-6 order-lg-1 text-center" data-aos="zoom-out" data-aos-delay="300">
-          <img src="./image/20,000 रुपए में 5 बेस्ट स्मार्टफोन_ 2025 में स्मार्ट चॉइस कैसे बनाएं_.jpg" alt="iPhone Intro" class="img-fluid rounded shadow" style="max-height: 450px; width: 100%; object-fit: cover;">
+          <img src="./image/20,000 रुपए میں 5 BEST स्मार्टफोन_ 2025 में स्मार्ट چーイズ کیسے بنائیں_.jpg" alt="iPhone Intro" class="img-fluid rounded shadow section-img">
         </div>
       </div>
     </div>
@@ -102,19 +142,19 @@
       <div class="row mb-5 text-center" data-aos="fade-up" data-aos-delay="400">
         <div class="col-lg-8 mx-auto">
           <h2 class="fw-bold text-primary mb-3">محصولات ما</h2>
-          <p class="text-muted">انواع مختلفی از تکنولوژی وجود دارد که هر یک دارای عملکردهای منحصر به فردی هستند و هدف آن‌ها، کارآمدتر کردن برخی فرآیندهاست. با درک بهتر از انواع تکنولوژی، می‌توانید یاد بگیرید که چگونه هر نوع تکنولوژی می‌تواند به بهبود زندگی روزمره شما کمک کند.</p>
+          <p class="text-muted">انواع مختلفی از تکنولوژی وجود دارد که هر یک دارای عملکردهای منحصر به فردی هستند و هدف آن‌ها، کارآمدتر کردن برخی فرآیندهاست.</p>
         </div>
       </div>
       
       <div class="row g-4" data-aos="fade-up" data-aos-delay="400">
         <!-- کارت اول -->
         <div class="col-md-6 col-lg-4">
-          <div class="card shadow h-100 border-0">
-            <img class="card-img-top" src="./image/iphone.jpg" style="height: 250px; object-fit: cover;" alt="آیفون">
+          <div class="card shadow-sm h-100 border-0">
+            <img class="card-img-ratio" src="./image/iphone.jpg" alt="آیفون">
             <div class="card-body d-flex flex-column justify-content-between">
               <div>
-                <h4 class="card-title fw-bold text-dark">آیفون</h4>
-                <p class="card-text text-muted small lh-lg">آیفون شامل تجهیزاتی مانند دوربین‌ها، میکروفون‌ها کاربران را قادر می‌سازد تا انواع مختلفی از وظایف این دستگاه به دلیل کیفیت ساخت بالا، امنیت بی‌نظیر و هماهنگی کامل میان سخت‌افزار و نرم‌افزار، محبوب‌ترین گوشی هوشمند جهان به شمار می‌رود برای نخستین بار در سال ۲۰۰۷ توسط استیو جابز معرفی شد.</p>
+                <h5 class="card-title fw-bold text-dark">آیفون</h5>
+                <p class="card-text text-muted small lh-lg">آیفون شامل تجهیزاتی مانند دوربین‌ها، میکروفون‌ها کاربران را قادر می‌سازد تا انواع مختلفی از وظایف این دستگاه به دلیل کیفیت ساخت بالا، امنیت بی‌نظیر و هماهنگی کامل میان سخت‌افزار و نرم‌افزار، محبوب‌ترین گوشی هوشمند جهان به شمار می‌رود.</p>
               </div>
               <a href="#" class="btn btn-primary w-100 mt-3">مشاهده بیشتر</a>
             </div>
@@ -123,12 +163,12 @@
         
         <!-- کارت دوم -->
         <div class="col-md-6 col-lg-4">
-          <div class="card shadow h-100 border-0">
-            <img class="card-img-top" src="./image/Modern office.jpg" style="height: 250px; object-fit: cover;" alt="تبلت">
+          <div class="card shadow-sm h-100 border-0">
+            <img class="card-img-ratio" src="./image/Modern office.jpg" alt="تبلت">
             <div class="card-body d-flex flex-column justify-content-between">
               <div>
-                <h4 class="card-title fw-bold text-dark">تبلت</h4>
-                <p class="card-text text-muted small lh-lg">(Tablet) یک رایانهٔ قابل حمل است که به‌طور معمول دارای سیستم‌عامل موبایل و یک صفحهٔ لمسی است. تبلت، به‌طور معمول به جای صفحه‌کلید با استفاده از تماس صفحهٔ نمایش کار می‌کند.استفاده از تبلت برای شما قابلیت های کارهایی را میدهد که در موبایل به آسانی قابل اجرا نیستند.</p>
+                <h5 class="card-title fw-bold text-dark">تبلت</h5>
+                <p class="card-text text-muted small lh-lg">(Tablet) یک رایانهٔ قابل حمل است که به‌طور معمول دارای سیستم‌عامل موبایل و یک صفحهٔ لمسی است. تبلت، به‌طور معمول به جای صفحه‌کلید با استفاده از تماس صفحهٔ نمایش کار می‌کند.</p>
               </div>
               <a href="#" class="btn btn-primary w-100 mt-3">مشاهده بیشتر</a>
             </div>
@@ -137,12 +177,12 @@
         
         <!-- کارت سوم -->
         <div class="col-md-6 col-lg-4">
-          <div class="card shadow h-100 border-0">
-            <img class="card-img-top" src="image/cumputer.webp" style="height: 250px; object-fit: cover;" alt="کامپیوتر">
+          <div class="card shadow-sm h-100 border-0">
+            <img class="card-img-ratio" src="image/cumputer.webp" alt="کامپیوتر">
             <div class="card-body d-flex flex-column justify-content-between">
               <div>
-                <h4 class="card-title fw-bold text-dark">کامپیوتر</h4>
-                <p class="card-text text-muted small lh-lg">کامپیوتر یک دستگاه الکترونیکی است که اطلاعات را دریافت و پردازش می‌ کند و نتایج را به صورت خروجی نشان می‌ دهد. این دستگاه شامل قطعات سخت‌ افزاری و نرم‌ افزار های مختلفی است که با هم کار کرده و کاربران را قادر می‌سازد تا انواع مختلفی از وظایف را انجام دهند.</p>
+                <h5 class="card-title fw-bold text-dark">کامپیوتر</h5>
+                <p class="card-text text-muted small lh-lg">کامپیوتر یک دستگاه الکترونیکی است که اطلاعات را دریافت و پردازش می‌ کند و نتایج را به صورت خروجی نشان می‌ دهد. این دستگاه شامل قطعات سخت‌ افزاری و نرم‌ افزار های مختلفی است که با هم کار می کنند.</p>
               </div>
               <a href="#" class="btn btn-primary w-100 mt-3">مشاهده بیشتر</a>
             </div>
@@ -152,24 +192,15 @@
     </div>
   </section>
 
-  <!-- بخش آمار (شروع کدهای ناقص قبلی شما) -->
+  <!-- بخش آمار -->
   <section class="counts py-5 overflow-hidden bg-dark text-light">
     <div class="container">
       <div class="row">
-        <!-- ادامه‌ی کدهای بخش آمار خود را اینجا قرار دهید -->
+        <!-- ادامه‌ی کدهای شما -->
       </div>
     </div>
   </section>
 
-  <!-- اضافه کردن اسکریپت AOS برای انیمیشن‌ها قبل از بسته شدن body -->
+  <!-- اسکریپت انیمیشن‌ها -->
   <script src="https://unpkg.com"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      AOS.init({
-        duration: 800,
-        once: true
-      });
-    });
-  </script>
-</body>
-</html>
