@@ -4,36 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> marwa.first</title>
-  <link rel="stylesheet" href="https://jsdelivr.net"
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
   <link rel="stylesheet" href="first project.css">
   <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
   <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-  <script defer src="https://jsdelivr.net"></script>
-  <link rel="stylesheet" href="https://jsdelivr.net">
-  <link rel="stylesheet" href="https://unpkg.com" />
-  <script defer src="https://jsdelivr.net"></script>
-  <link href="https://googleapis.com" rel="stylesheet">
-
-  <style>
-    /* این استایل کوتاه فقط ابعاد تصاویر را بدون دفرمه شدن کوچک می‌کند */
-    .card-img-top {
-      height: 250px !important;
-      object-fit: cover !important;
-    }
-    .intro img, .py-5 img {
-      max-height: 380px !important;
-      width: 100% !important;
-      object-fit: cover !important;
-    }
-  </style>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.0/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.0/dist/cdn.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-
 <header x-data="{navshow:false}" @scroll.window="navshow=window.scrollY>100 ? true:false">
   <nav class=" header-2 navbar navbar-expand-lg  navbar-light fixed-top " :class="{ 'header' :navshow}">
     <div class="container">
-      <a class="navbar-brand" href="#"> <img src="image/Smart_Mobile_App_Solutions_by_Code_Brew_Labs_Dubai-removebg-preview.png " alt="" style="width: 30px ;height: 30px;"
+      <a class="navbar-brand" href="#"> <img src="image/Smart_Mobile_App_Solutions_by_Code_Brew_Labs_Dubai-removebg-preview.png " alt="" style="width: 40px ;height: 40px;"
           class="rounded-circle">
          خدمات موبایل</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -70,8 +55,7 @@
     </div>
   </nav>
 </header>
-
-<section class="intro align-items-center d-flex ovelflow-hidden">
+<section class="intro align-items-center d-flex ovelflow-hidden " style="height: 900px;">
   <div class="container">
     <div class="row align-items-center mt-5 mt-lg-0">
       <div class="col-lg-6">
@@ -80,16 +64,19 @@
           تجربه کنید</h3>
         <h5 class=" mt-4 text-light" data-aos="fade-up" data-aos-delay="300"> جهان تکنولوژی به عنوان یکی از مهمترین و
           کلیدی ترین
-          عامل تحول در جوامع مدرن و آینده شناخته می شود. اما، نیاز به استفاده متعادل و هوشمندانه از تکنولوژی برای
+          عوامل تحول در جوامع مدرن و آینده شناخته می شود. اما، نیاز به استفاده متعادل و هوشمندانه از تکنولوژی برای
           جلوگیری از نقاط ضعف و احتمالی های منفی آن نیز وجود دارد، زیرا این مفهوم تأثیرات گسترده ای بر جوانب مختلف زندگی
           دارد که ممکن است به نواقص و چالش هایی همراه باشد. </h5>
-        <button class="btn btn-lg btn-primary mt-2  hover-grow" data-aos="fade-up" data-aos-delay="400"> نمایش</button>
-      </divz
+        <button class="btn btn-lg btn-primary mt-2  hover-grow mb-sm-0" data-aos="fade-up" data-aos-delay="400"> نمایش</button>
+      </div>
+      <div class="col-lg-6 mt-5 mt-lg-0">
+        <img src="./image/Smartphone Interactive Display.jpg" alt="" class="img-fluid mt-sm-0" style="height:300px; width: 100%; ">
+      </div>
     </div>
   </div>
 </section>
-
 <section class="py-5 ovelflow-hidden">
+
   <div class="container">
     <div class="row align-items-center gy-5 gx-0">
       <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="300">
@@ -101,12 +88,11 @@
         </div>
       </div>
       <div class="col-lg-6 " data-aos="zoom-out" data-aos-delay="300">
-        <img src="./image/20,000 रुपए میں 5 بست اسمارٹ فون_ 2025 میں اسمارٹ چوائس کیسے بنائیں_.jpg" alt="" class="img-fluid">
+        <img src="./image/20,000 रुपए में 5 बेस्ट स्मार्टफोन_ 2025 में स्मार्ट चॉइस कैसे बनाएं_.jpg" style="height: 400px; width: 500px;" alt="" class="img-fluid">
       </div>
     </div>
   </div>
 </section>
-
 <section class="py-5 ovelflow-hidden" id="first">
   <div class="container">
     <div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
@@ -121,7 +107,7 @@
     <div class="row g-2" data-aos="fade-up" data-aos-delay="400">
       <div class="col-md-6 col-lg-4">
         <div class="card shadow">
-          <img class="card-img-top" src="./image/iphone.jpg" alt="Card image">
+          <img class="card-img-top" src="./image/iphone.jpg" style="height: 400px;" alt="Card image">
           <div class="card-body">
             <h4 class="card-title fw-bold">  آیفون </h4>
             <p class="card-text">آیفون شامل تجهیزاتی مانند دوربین‌ها، میکروفون‌ها  کاربران را قادر می‌سازد تا انواع مختلفی از وظایف این دستگاه به دلیل کیفیت ساخت بالا، امنیت بی‌نظیر و هماهنگی کامل میان سخت‌افزار و نرم‌افزار، محبوب‌ترین گوشی هوشمند جهان به شمار می‌رود برای نخستین بار در سال ۲۰۰۷ توسط استیو جابز معرفی شدبرای نخستین بار توسط استیو جابز معرفی شد  </p>
@@ -131,7 +117,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="card shadow">
-          <img class="card-img-top" src="./image/Modern office.jpg" alt="Card image">
+          <img class="card-img-top" src="./image/Modern office.jpg" style="height: 400px;"  alt="Card image">
           <div class="card-body">
             <h4 class="card-title fw-bold">تبلت</h4>
             <p class="card-text">(Tablet) یک رایانهٔ قابل حمل است که به‌طور معمول دارای سیستم‌عامل موبایل و یک صفحهٔ
@@ -143,7 +129,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="card shadow">
-          <img class="card-img-top" src="image/cumputer.webp" alt="Card image">
+          <img class="card-img-top" src="./image/_Modern Workstation_ Premium HP EliteBook.jpg" style="height: 400px;" alt="Card image">
           <div class="card-body">
             <h4 class="card-title fw-bold">کامپیوتر</h4>
             <p class="card-text"> کامپیوتر یک دستگاه الکترونیکی است که اطلاعات را دریافت و پردازش می‌ کند و نتایج را به
@@ -157,22 +143,457 @@
     </div>
   </div>
 </section>
-
 <section class="counts py-5 overflow-hidden">
   <div class="container">
-    <div class="row">
-      <!-- کدهای بخش آمار شما بدون هیچ تغییری اینجا لود می‌شوند -->
+    <div class="row gy-3" data-aos="zoom-in" data-aos-delay="300">
+      <div class="col-md-6 col-lg-3">
+        <div class="shadow p-3 d-flex align-items-center justify-content-center">
+          <i class="fa fa-smile me-3 text-primary"></i>
+          <div>
+            <span class="fw-bold fs-3 text-primary purecounter" data-purecounter-start="300"
+              data-purecounter-end="1006"> 300</span>
+            <p>مشتریان راضی</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="shadow p-3 d-flex align-items-center justify-content-center">
+          <i class="fa fa-phone me-3 text-primary"></i>
+          <div>
+            <span class="fw-bold fs-3 text-primary purecounter" data-purecounter-start="0" data-purecounter-end="20000">
+              0</span>
+            <p>تعداد سفارشات کل</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="shadow p-3 d-flex align-items-center justify-content-center">
+          <i class="fa fa-heart me-3 text-primary"></i>
+          <div>
+            <span class="fw-bold fs-3 text-primary purecounter" data-purecounter-start="1000"
+              data-purecounter-end="20000"> 1000</span>
+            <p>میزان رضایت شما</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="shadow p-3 d-flex align-items-center justify-content-center">
+          <i class="fa fa-laugh me-3 text-primary"></i>
+          <div>
+            <span class="fw-bold fs-3 text-primary purecounter" data-purecounter-start="0" data-purecounter-end="20000">
+              0</span>
+            <p>فروشات موفق</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- بستن اسکریپت‌ها و انتهای فایل تکمیلی -->
-<script src="https://jsdelivr.net"></script>
-<script src="https://unpkg.com"></script>
+<section class=" one py-5 overflow-hidden">
+  <div class="container">
+    <div class="row " data-aos="fade-up" data-aos-delay="200px">
+      <h4 class="mb-5">“با خرید از فروشگاه آنلاین ما بهترین محصولات تکنولوژیکی را با اطمینان،و پایین ترین نرخ بازار
+        تجربه کنید. ما آماده خدمات رسانی هستیم!”</h4>
+    </div>
+    <div class="row  align-items-center" data-aos="fade-up" data-aos-delay="400px">
+      <div class="col-lg-4  my-4">
+        <img class="img-fluid" src="./image/iPhone 16 pro max.jpg" style="height: 400px;" alt="">
+      </div>
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="d-flex">
+              <i class="bi bi-apple  ms-3  fs-1  text-primary"></i>
+              <div>
+                <h5>باکیفیت ترین محصولات تکنولوژیکی </h5>
+                <p class="text-muted">در فروشگاه آنلاین ما ، انواع مختلف محصولات تکنولوژیکی از جمله لپ تاب ها،کامپیوتر
+                  ،ساعت های هوشمند،تلوزیون،هدفون،تب لت های هوشمند،گوشکی ها و غیره محصولات مورد نظرتان راپیدا کنید.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex">
+              <i class="bi bi-truck  ms-3  fs-1  text-primary"></i>
+              <div>
+                <h5>ارسال سریع و رایگان</h5>
+                <p class="text-muted">سفارش‌های شما در کوتاه‌ترین زمان و به صورت رایگان درب منزل تحویل داده می‌شوند تا
+                  خریدی راحت و بدون دغدغه داشته باشید.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex">
+              <i class="bi bi-headset  ms-3  fs-1  text-primary"></i>
+              <div>
+                <h5>رضایت مشتری و پشتیبانی 24 ساعته</h5>
+                <p class="text-muted">تیم پشتیبانی فروشگاه آنلاین نانو همیشه آماده پاسخگویی به سوالات و رفع مشکلات شماست
+                  تا تجربه خرید شما کامل و رضایت‌بخش باشد.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex">
+              <i class="bi bi-credit-card-2-front  ms-3  fs-1  text-primary"></i>
+              <div>
+                <h5>پرداخت امن و آسان</h5>
+                <p class="text-muted">با درگاه‌های پرداخت امن و متنوع، می‌توانید به آسانی و با اطمینان کامل خرید خود را
+                  انجام دهید.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex">
+              <i class="bi bi-grid-1x2  ms-3  fs-1  text-primary"></i>
+              <div>
+                <h5>تنوع محصولات و برندهای معتبر</h5>
+                <p class="text-muted">فروشگاه آنلاین ما مجموعه‌ای گسترده ازکامپیوتر هاريا،مبایل های هوشمندو تبلت های
+                  مورد نظرتانرا از برندهای معتبر را ارائه می‌دهد تا انتخابی متنوع و مطمئن داشته باشید.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex">
+              <i class="bi bi-tag  ms-3  fs-1  text-primary"></i>
+              <div>
+                <h5>تخفیف‌ها و پیشنهادهای ویژه</h5>
+                <p class="text-muted">با خرید چند باره از فروشگاه آنلاین ما، می‌توانید از تخفیف‌ها و پیشنهادهای ویژه
+                  بهره‌مند شوید و تجربه‌ای اقتصادی و رضایت‌بخش داشته باشید.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services py-5 overflow-hidden" id="fifth">
+  <div class="container">
+    <div class="row text-center" data-aos="fade-in" data-aos-delay="200">
+      <h2 class="fw-bold">راه های ارتباطی ما </h2>
+      <p>در شبکه‌های اجتماعی ما محصولات مورد نظرتان را جستجو کنید!</p>
+    </div>
+    <div class="row gy-3" data-aos="fade-in" data-aos-delay="300">
+      <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="400">
+        <div class="service-box blue">
+          <i class="fab fa-telegram blue2"></i>
+          <h3 class="fw-bold">عضو کانال تلگرام ما شوید</h3>
+          <p>در کانال تلگرامی ما محصولات تکنولوژیکی تان را جستجو وسفارش دهید.</p>
+          <a href="#" class="read-more mt-5"> <span>مشاهده بیشتر</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="450">
+        <div class="service-box orange">
+          <i class="fab fa-instagram blue2"></i>
+          <h3 class="fw-bold">عضو کانال انستاگرام ما شوید</h3>
+          <p>در کانال انستاگرام ما محصولات تکنولوژیکی مورد نظرتانرا را جستجو وسفارش دهید.</p>
+          <a href="#" class="read-more mt-5"> <span>مشاهده بیشتر</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="500">
+        <div class="service-box purple">
+          <i class="fab fa-youtube blue2"></i>
+          <h3 class="fw-bold">عضو کانال یوتیوب ما شوید</h3>
+          <p>در کانال یوتیوب ما محصولات تکنولوژیکی تان را جستجو وسفارش دهید.</p>
+          <a href="#" class="read-more mt-5"> <span>مشاهده بیشتر</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 pricing  overflow-hidden" id="second">
+  <div class="container">
+    <div class="row mb-4 text-center fw-bold" data-aos="fade-up" data-aos-delay="200">
+      <h2 class="text-primary"> محصولات ترند !</h2>
+      <p>در این فروشگاه همیشه به‌روزترین و محبوب‌ترین محصولات تکنولوژیکی برای شما آماده است!</p>
+    </div>
+    <div class="row text-center gy-3">
+      <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="300">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="fw-bold" style="color: rgb(59, 108, 244);"> لپ تاب های هوشمند hp</h4>
+            <div>20000<sup>افغانی</sup>یک پایه</div>
+            <img src="image/cumputer.webp" class="img-fluid p-4" alt="">
+            <ul class="list-unstyled">
+              <li class="my-2">مرور اینترنت و دسترسی به اطلاعات مختلف</li>
+              <li class="my-2">ارسال و دریافت ایمیل و ارتباطات آنلاین
+              </li>
+              <li class="my-2">انجام بازی‌های سنگین و اجرای انواع برنامه‌ها</li>
+              <li class="my-2">پشتیبانی از سیستم اینترنت بی‌سیم، مدیریت ایمیل‌ها و شبکه‌های اجتماعی</li>
+              <li class="my-2">برنامه‌نویسی و توسعه نرم‌ افزار ها
+              </li>
+              <li>مدیریت و ذخیره‌ سازی داده‌ ها و اطلاعات
+              </li>
+              <li class="text-muted text-decoration-line-through"> نبور فضای کافی برای کار با برنامه های کد نویسی</li>
+            </ul>
+            <button class="btn btn-outline-primary  mt-4">افزودن به سبد خرید !</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="400">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="fw-bold" style="color: rgb(246, 113, 52);">آیفون 16 پرو</h4>
+            <div>65000<sup>افغانی</sup>یک عدد</div>
+            <img src="./image/1073123417532110610.jpg" class="img-fluid p-4" alt="">
+            <ul class="list-unstyled">
+                           <li class="my-2">قابلیت‌های شخصی‌سازی بیشتر.</li>
+              <li class="my-2"> iOS به دلیل به‌روزرسانی‌های منظم و عمر طولانی نرم‌افزاری</li>
+              <li class="my-2">بدنه شیشه‌ای و فریم آلومینیومی به گوشی جلوه‌ای لوکس و مقاوم میدهد</li>
+              <li class="text-muted text-decoration-line-through">قیمیت بالای محصول</li>
+            </ul>
+            <button class="btn btn-outline-primary  mt-4">افزودن به سبد خرید!</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="500">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="fw-bold" style="color: rgb(114, 45, 105);">تبلت</h4>
+            <div>10000<sup>افغانی</sup>یک عدد</div>
+            <img src="image/tablet.webp" class="img-fluid p-4" alt="">
+            <ul class="list-unstyled">
+              <li class="my-2">مشاهدهٔ انواع فیلم‌ها و شنیدن موسیقی با کیفیت بالا در انواع قالب‌ها های مختلف</li>
+              <li class="my-2"> مطالعهٔ کتاب‌های الکترونیکی در انواع قالب‌ها</li>
+              <li class="my-2">ویرایش، ایجاد متن و </li>
+              <li class="">عکاسی و تصویر برداری با کیفیت بالا و برقراری مکالمات تصویری</li>
+              <li class="text-muted text-decoration-line-through"> دستگاهی مجهز به پردازنده اینتل </li>
+            </ul>
+            <button class="btn btn-outline-primary  mt-4">افزودن به سبد خرید!</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="600">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="fw-bold" style="color: rgb(23, 67, 121);">دوربین های مداربسته الکترونی </h4>
+            <div>25000<sup>افغانی</sup>3دروبین به هم متصل</div>
+            <img src="image/six.jpg" class="img-fluid p-4" alt="">
+            <ul class="list-unstyled">
+              <li class="my-2"> قدرت زوم دوربین مداربسته برای امنیت 
+              </li>
+              <li class="my-2">تصاویر را با دقت بالا ضبط کند و از راه دور به صورت
+ زنده پخش می کند</li>
+              <li class="my-2">تصاویری که توسط دوربین ضبط می‌شود، می‌توانند به صورت آنلاین یا آفلاین ذخیره شوند</li>
+              <li class="my-2">قابلیت ضبط و ذخیره‌سازی تصاویر است. </li>
+              <li class="my-2 text-muted text-decoration-line-through">ضمانت معتبر برای خرید</li>
+              <li class="text-muted text-decoration-line-through"> قیمت هنگفت دلاری</li>
+            </ul>
+            <button class="btn btn-outline-primary  mt-4">افزودن به سبد خرید!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contacts py-5 ovelflow-hidden" id="six">
+  <div class="container">
+    <div class="row mb-4 text-center">
+      <h2 class="fw-bold"> تماس با ما</h2>
+    </div>
+    <div class="row gy-3">
+      <div class="col-lg-6">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="info-box">
+              <i class="bi bi-geo-alt"></i>
+              <h6>فروشگاه آنلاین هرات ، هرات، افغانستان</h6>
+              <p>دسترسی آسان به لوازم و محصولات تکنالوژیکی مورد نظرشما!</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box">
+              <i class="fa fa-phone"></i>
+              <h5> شماره تماس</h5>
+              <p class="cellphone">+93788889300<br>+93799257908</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box">
+              <i class="fa fa-clock"></i>
+              <h5>ساعات کاری</h5>
+              <p>شنبه تا پنج‌شنبه: بصورت 24 ساعته</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box">
+              <i class="fa fa-envelope"></i>
+              <h5>ایمیل پشتیبانی</h5>
+              <p>برای سفارشات با به تماس شوید</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form class="form" method="post">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <label for="name" class="form-label">نام</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="col-md-6">
+              <label for="last-name" class="form-label">تخلص</label>
+              <input type="text" class="form-control" id="last-name">
+            </div>
+            <div class="col-md-12">
+              <label class="form-label" for="email">ایمیل آدرس</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="col-md-12">
+              <label class="form-label" for="text">پیام شما</label>
+              <textarea name="" id="text" rows="2" class="form-control"></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn btn-primary">ارسال اطلاعات</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="text-center fst-italic fw-bold text-primary" style="background-color: rgb(244, 248, 255);">
+        <h3>heart Online iPhone</h3>
+      </div>
+    </div>
+    <div class="row gy-4">
+      <div class="col-lg-3  col-12">
+        <h3 class="fw-bold">ایمیل </h3>
+        <p>yosufimarwa24@gmail.com</p>
+        <div class="social-link t">
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-12">
+        <h5>محصولات ما</h5>
+        <hr class="bg-primary">
+        <ul class="list-unstyled footer-link">
+          <li>
+            <a href="#">
+              <i class="fa fa-angle-left"></i>
+              انواع کامپیوتر ها با برند های مختلف
+            </a>
+          </li>
+          <li class="mt-2">
+            <a href="#">
+              <i class="fa fa-angle-left"></i>
+              تبلت های هوشمند
+            </a>
+          </li>
+          <li class="mt-2">
+            <a href="#">
+              <i class="fa fa-angle-left"></i>
+              مبایل ها ی هوشمند
+            </a>
+          </li>
+          <li class="mt-2">
+            <a href="#">
+              <i class="fa fa-angle-left"></i>
+              دوربین های مداربسته
+            </a>
+          </li>
+          <li class="mt-2">
+            <a href="#">
+              <i class="fa fa-angle-left"></i>
+              هدفون های اسمارت
+            </a>
+          </li>
+          <li class="mt-2">
+            <a href="#">
+              <i class="fa fa-angle-left"></i>
+              آی پد ها از کمپنی های معتبر جهانی
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>نمایندگی های رسمی </h5>
+        <hr class="bg-primary">
+        <ul class="list-unstyled .footer-links">
+          <li>
+            <a href="#" class="text-dark text-decoration-none">
+              <i class="fa fa-angle-left"></i>
+              هرات/مارکت حضرت ها
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-dark text-decoration-none"></a>
+            <i class="fa fa-angle-left"></i>
+            کابل/ لیسه مریم
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-dark text-decoration-none"></a>
+            <i class="fa fa-angle-left"></i>
+            مزارشریف/شهر نو
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>تیم کاری هرات موبایل</h5>
+        <hr class="bg-primary">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" class="text-dark text-decoration-none">
+              <i class="fa fa-angle-left footer-links"></i>
+              درباره ما
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-dark text-decoration-none">
+              <i class="fa fa-angle-left"></i>
+              تماس با ما
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-dark text-decoration-none">
+              <i class="fa fa-angle-left"></i>
+              درخواست نمایندگی
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-dark text-decoration-none">
+              <i class="fa fa-angle-left"></i>
+              انتقادات و پیشنهادات
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-center py-4 text-light text-capitalize fst-bould"
+    style="background-color: #464bd1;">
+    <h5 class="fw-bold"> heart Online iphone</h5>
+    <p> I am marwa yosufi the owner of Nano Tech group</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    AOS.init({ duration: 800, once: true });
-  });
+  new PureCounter();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="dist/purecounter_vanilla.js"></script>
+<script>
+  new PureCounter();
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 </body>
 </html>
+
